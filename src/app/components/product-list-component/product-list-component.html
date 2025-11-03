@@ -1,0 +1,19 @@
+<p>product-list-component works!</p>
+<p>
+    @if (productos.length == 0) {
+    <span>No hay productos disponibles.</span>
+    } @else {
+<ul>
+    @for (item of productos; track $index) {
+    <li>
+        <p>
+        Código: {{item.id}}<br>
+        Descripción: {{item.descripcion | uppercase}}<br>
+        Precio: {{item.precio | currency:'COP':'symbol-narrow'}}<br>
+        Stock: {{item.stock > 0 ? item.stock + ' unds.' : 'AGOTADO'}}
+        </p>
+    </li>
+    }
+</ul>
+}
+</p>
