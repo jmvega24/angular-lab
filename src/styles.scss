@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'app/styles/variables' as *;
+
+:root {
+  /* CSS custom properties (útiles para temas dinámicos) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+}

@@ -1,0 +1,14 @@
+@use '../../styles/variables' as *;
+
+:host { display: block; }
+
+.app-footer {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  background: $color-surface;
+}
+
+.container {
+  padding-block: var(--space-4);
+  text-align: center;
+  opacity: .8;
+}

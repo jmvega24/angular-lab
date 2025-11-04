@@ -1,0 +1,30 @@
+@use '../../styles/variables' as *;
+
+:host {
+  display: block;
+}
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: $color-surface;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--space-4);
+}
+
+.brand { margin: 0; font-size: 1.125rem; letter-spacing: .4px; }
+
+.nav a {
+  color: $color-text;
+  text-decoration: none;
+  margin-left: var(--space-4);
+  opacity: .9;
+}
+.nav a:hover { color: $color-accent; }

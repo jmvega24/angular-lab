@@ -1,0 +1,16 @@
+@use 'styles/variables' as *;
+
+:host {
+  display: block;
+  min-height: 100dvh; // altura segura en móviles
+}
+
+.layout {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto; // header - main - footer
+}
+
+.content {
+  padding-block: var(--space-6);
+}
